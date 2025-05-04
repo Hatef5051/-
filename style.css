@@ -1,0 +1,114 @@
+/* فونت و پایه */
+body {
+  font-family: 'Vazirmatn', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* هدر */
+header {
+  background-color: #1e1e2f;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+nav a {
+  color: white;
+  margin-right: 1rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+nav a:hover, nav a.active {
+  color: #ffd700;
+}
+
+/* هیرو */
+.hero.small {
+  background: linear-gradient(to right, #3b3b98, #5f27cd);
+  color: white;
+  padding: 3rem;
+  text-align: center;
+}
+
+/* دوره‌ها */
+.courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+.course {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.course:hover {
+  transform: translateY(-5px);
+}
+.course img {
+  width: 100%;
+  display: block;
+}
+.course h3 {
+  margin: 1rem;
+  color: #5f27cd;
+}
+.course p {
+  margin: 0 1rem 1rem;
+}
+.course .btn {
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #5f27cd;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+.course .btn:hover {
+  background-color: #3b3b98;
+}
+
+/* تایپینگ */
+.typing-box {
+  padding: 3rem 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  background: #fff;
+}
+
+/* فوتر */
+footer {
+  background-color: #1e1e2f;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* ریسپانسیو */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav a {
+    margin: 0.5rem;
+  }
+  .hero.small h2 {
+    font-size: 1.5rem;
+  }
+}
